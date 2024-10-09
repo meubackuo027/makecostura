@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte e Costura Personalizada</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #8e44ad; /* roxo */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .banner h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        button {
+            background: #e74c3c; /* vermelho */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #c0392b; /* vermelho escuro */
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #3498db; /* azul */
+            padding-bottom: 10px;
+        }
+        .texto {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 5px solid #e67e22; /* laranja */
+            background: #f8f9fa;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .galeria img {
+            max-width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #8e44ad; /* roxo */
+            color: white;
+            margin-top: 20px;
+        }
+        .materiais-semana {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input:focus, textarea:focus {
+            border-color: #3498db; /* azul */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Principal -->
+    <header>
+        <div class="banner">
+            <h1>Realize suas ideias de forma única!</h1>
+            <button><a href="#contato" style="color: white; text-decoration: none;">Peça uma Consulta Gratuita</a></button>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre">
+        <h2>Quem Somos</h2>
+        <p>Na Corte e Costura, temos uma paixão enorme por moda e criação. Oferecemos serviços de costura sob medida, atendendo às suas preferências e estilo pessoal.</p>
+    </section>
+
+    <!-- Seção Nossos Serviços -->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Costura Personalizada</li>
+            <li>Ajustes e Reformas</li>
+            <li>Desenvolvimento de Modelos Exclusivos</li>
+            <li>Consultoria de Moda</li>
+        </ul>
+    </section>
+
+    <!-- Seção Textos sobre Corte e Costura -->
+    <section id="textos">
+        <h2>Aprenda Mais sobre Corte e Costura</h2>
+        
+        <div class="texto">
+            <h3>A Evolução da Costura</h3>
+            <p>A costura é uma prática que remonta a épocas antigas, sendo uma habilidade crucial para a criação de vestuário. Desde civilizações primitivas, as pessoas utilizavam agulhas feitas de materiais naturais para unir tecidos. Com o tempo, essa técnica avançou, levando ao surgimento de máquinas de costura que transformaram a indústria têxtil no século XIX. A costura não é apenas uma habilidade funcional, mas também uma forma de expressão artística que permite manifestar criatividade e individualidade. Atualmente, o corte e a costura continuam a ser fundamentais na moda, possibilitando a personalização e a criação de peças únicas que refletem o estilo de cada pessoa.</p>
+        </div>
+
+        <div class="texto">
+            <h3>Estratégias de Corte e Costura</h3>
+            <p>O corte e a costura abrangem diversas técnicas que podem variar conforme o projeto e o tipo de tecido utilizado. O corte é a fase inicial, onde os materiais são preparados e recortados nas formas desejadas. É crucial ter precisão nessa etapa, pois um corte impreciso pode comprometer toda a peça. Após o corte, segue-se a costura, que consiste na união das partes cortadas. Existem diferentes tipos de pontos, como o ponto reto, ziguezague e caseado, cada um com suas respectivas aplicações. Ademais, a escolha dos materiais, como linhas, botões e zíperes, também é essencial para o resultado final. Aprender e dominar essas técnicas pode demandar tempo, mas os resultados são recompensadores, pois cada peça se torna uma extensão da sua criatividade.</p>
+        </div>
+
+        <div class="texto">
+            <h3>Dicas para Novatos em Corte e Costura</h3>
+            <p>Para aqueles que estão iniciando no universo do corte e costura, algumas orientações podem facilitar o aprendizado. Primeiramente, invista em boas ferramentas, como uma máquina de costura confiável e utensílios essenciais, como tesouras, réguas e alfinetes. É importante também optar por projetos que se adequem ao seu nível de habilidade. Começar com peças simples, como saias ou almofadas, pode ajudar a ganhar confiança. Além disso, não tenha medo de cometer erros; cada falha é uma chance de aprendizado. Por fim, considere participar de cursos ou grupos de costura, onde você pode compartilhar experiências e aprender com outros apaixonados. A costura é uma habilidade gratificante que proporciona um sentimento de realização ao criar algo exclusivo e personalizado.</p>
+        </div>
+
+        <div class="texto">
+            <h3>O Valor da Moda Sustentável</h3>
+            <p>A moda sustentável tem se destacado nos últimos anos, e o corte e a costura desempenham um papel significativo nesse contexto. A crescente consciência sobre o impacto ambiental da indústria da moda levou muitos a buscar opções mais responsáveis. Isso inclui o uso de tecidos ecológicos, a redução do desperdício e a valorização de técnicas de costura que prolongam a vida útil das peças. Ao optar pela costura sob medida, você não apenas adquire roupas personalizadas, mas também colabora para um consumo mais consciente, evitando a produção em massa e priorizando a qualidade em detrimento da quantidade. Adotar a moda sustentável é uma forma de alinhar seu estilo pessoal com princípios éticos e ambientais.</p>
+        </div>
+
+        <div class="texto">
+            <h3>Erros Frequentes e Como Evitá-los</h3>
+            <p>Todo costureiro, seja iniciante ou experiente, comete erros ocasionalmente. Reconhecer os erros mais comuns pode ajudar a evitá-los. Um dos enganos mais frequentes é não pré-lavar o tecido antes de cortar, o que pode resultar em encolhimento indesejado após a confecção da peça. Outro erro comum é a falta de planejamento na escolha do padrão e do tecido; é fundamental considerar a compatibilidade entre ambos. Além disso, não ler as instruções do padrão cuidadosamente pode causar confusões durante a costura. Por fim, não se apresse: a costura é uma arte que requer paciência e prática. Aprender a evitar esses erros pode levar a um resultado final muito mais gratificante.</p>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria">
+        <h2>Confira Nosso Trabalho</h2>
+        <div class="galeria">
+            <img src="https://i1.sndcdn.com/artworks-000658299916-vh49zb-t500x500.jpg" alt="Projeto 1">
+            <img src="https://cdns-images.dzcdn.net/images/artist/a3ee8940e4c6c4ad318caf78a257d22b/1900x1900-000000-80-0-0.jpg" alt="Projeto 2">
+            <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/d
+            <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/d/0/8/8/d088018120012e3238754e049f1c3cf8.jpg" alt="Projeto 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf86UIrjShrsMKmsagRrpUIEtCjThIkqHs_Q&s" alt="Projeto 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfU039Dr-UXG6N79xyZmqESbAjJ88Ce7dGKQ&s" alt="Projeto 5">
+            <img src="https://i.scdn.co/image/ab67616d0000b273bebc27c9a456c05d6bf6c0d1" alt="Projeto 6">
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section id="depoimentos">
+        <h2>O que Nossos Clientes Dizem</h2>
+        <blockquote>"Serviço excepcional, minha peça ficou impecável!" - Cliente Satisfeito</blockquote>
+        <blockquote>"Profissionais dedicados e criativos!" - Cliente Feliz</blockquote>
+    </section>
+
+    <!-- Seção Como Funciona -->
+    <section id="como-funciona">
+        <h2>Como Funciona</h2>
+        <ol>
+            <li>Consulta Inicial: Entre em contato para discutir suas ideias.</li>
+            <li>Escolha de Materiais: Selecione os tecidos e acabamentos.</li>
+            <li>Criação da Peça: Nossos especialistas cuidam de cada detalhe.</li>
+            <li>Entrega: Receba sua peça pronta e exclusiva.</li>
+        </ol>
+    </section>
+
+    <!-- Seção Chamada para Ação -->
+    <section id="contato">
+        <h2>Pronto para Começar?</h2>
+        <button><a href="#formulario" style="color: white; text-decoration: none;">Peça uma Consulta Gratuita</a></button>
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit" style="background: #28a745;">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seção Redes Sociais e Contato -->
+    <footer>
+        <h2>Conecte-se Conosco</h2>
+        <p>Siga-nos nas redes sociais!</p>
+        <p>Email: contato@nomedasuaempresa.com | Telefone: (00) 0000-0000</p>
+        <div class="materiais-semana">
+            <h3>Matérias da Semana</h3>
+            <p>1. Dicas de Costura para Iniciantes</p>
+            <p>2. Tendências de Moda para a Próxima Temporada</p>
+            <p>3. Como Escolher o Tecido Ideal</p>
+        </div>
+      
+    </footer>
+</body>
+</html>
